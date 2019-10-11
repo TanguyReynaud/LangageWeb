@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<ns3:centre
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xmlns:ns3='http://polytech.ujf-grenoble.fr/centre'
+    xmlns:ns2='http://polytech.ujf-grenoble.fr/fiches'
+    xmlns:ns1='http://polytech.ujf-grenoble.fr/codes'
+    xsi:schemaLocation='http://polytech.ujf-grenoble.fr/centre file:/ext/reynauta/Documents/LangageWeb/TP04/web/WEB-INF/xsd/centre.xsd
+   http://polytech.ujf-grenoble.fr/fiches file:/ext/reynauta/Documents/LangageWeb/TP04/web/WEB-INF/xsd/fiches.xsd
+   http://polytech.ujf-grenoble.fr/codes file:/ext/reynauta/Documents/LangageWeb/TP04/web/WEB-INF/xsd/codes.xsd'>
+    <ns3:medecins>
+        <ns3:medecin>
+            <ns3:id></ns3:id>
+            <ns3:nom></ns3:nom>
+            <ns3:prenom></ns3:prenom>
+            <ns3:specialite></ns3:specialite>
+        </ns3:medecin>
+        <ns3:codes>
+            <ns1:codecout>
+                <ns1:nom></ns1:nom>
+                <ns1:libelle></ns1:libelle>
+                <ns1:cout></ns1:cout>
+            </ns1:codecout>
+        </ns3:codes>
+        <ns3:fiches>
+            <ns2:ficheDeSoins>
+                <ns2:date></ns2:date>
+                <ns2:medecin id=""></ns2:medecin>
+                <ns2:patient>
+                    <ns2:nom></ns2:nom>
+                    <ns2:prenom></ns2:prenom>
+                </ns2:patient>
+                <ns2:acte>
+                    <ns2:code></ns2:code>
+                </ns2:acte>
+            </ns2:ficheDeSoins>
+        </ns3:fiches>
+    </ns3:medecins>
+
+</ns3:centre>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<ns1:adherent
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xmlns:ns1='http://polytech.ujf-grenoble.fr/adherent'
+    xsi:schemaLocation='http://polytech.ujf-grenoble.fr/adherent file:/ext/reynauta/Documents/LangageWeb/TP04/web/WEB-INF/xsd/XSDSchema.xsd'>
+    <ns1:identité>
+        <ns2:nom></ns2:nom>
+        <ns2:prenom></ns2:prenom>
+    </ns1:identité>
+    <ns1:emprunts>
+        <ns1:titre></ns1:titre>
+        <ns1:auteur>
+            <ns3:identité>
+                <ns2:nom></ns2:nom>
+                <ns2:prenom></ns2:prenom>
+            </ns3:identité>
+            <ns3:naissance></ns3:naissance>
+            <ns3:mort></ns3:mort>
+        </ns1:auteur>
+    </ns1:emprunts>
+    <ns1:emprunts>
+        <ns1:titre></ns1:titre>
+        <ns1:auteur>
+            <ns3:identité>
+                <ns2:nom></ns2:nom>
+                <ns2:prenom></ns2:prenom>
+            </ns3:identité>
+            <ns3:naissance></ns3:naissance>
+            <ns3:mort></ns3:mort>
+        </ns1:auteur>
+    </ns1:emprunts>
+    <ns1:emprunts>
+        <ns1:titre></ns1:titre>
+        <ns1:auteur>
+            <ns3:identité>
+                <ns2:nom></ns2:nom>
+                <ns2:prenom></ns2:prenom>
+            </ns3:identité>
+            <ns3:naissance></ns3:naissance>
+            <ns3:mort></ns3:mort>
+        </ns1:auteur>
+    </ns1:emprunts>
+
+</ns1:adherent>

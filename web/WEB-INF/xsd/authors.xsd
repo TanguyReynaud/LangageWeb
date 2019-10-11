@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://polytech.ujf-grenoble.fr/authors"
+            xmlns="http://polytech.ujf-grenoble.fr/authors"
+            xmlns:idt="http://polytech.ujf-grenoble.fr/idty"
+            elementFormDefault="qualified">
+    <xsd:import schemaLocation="/ext/reynauta/Documents/LangageWeb/TP04/web/WEB-INF/xsd/idty.xsd" namespace="http://polytech.ujf-grenoble.fr/idty"/>
+    
+    <xsd:element name="authors" type="InfoAuteur"/>
+    <xsd:complexType name="InfoAuteur">
+        <xsd:sequence>
+          <xsd:element name="identité" type="idt:Id"/>
+          <xsd:element name="naissance" type="xsd:date"/>      
+          <xsd:element name="mort" type="xsd:date"/>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://polytech.ujf-grenoble.fr/centre"
+            xmlns="http://polytech.ujf-grenoble.fr/centre"
+            xmlns:ce="http://polytech.ujf-grenoble.fr/centre"
+            xmlns:fic="http://polytech.ujf-grenoble.fr/fiches"
+            xmlns:cod="http://polytech.ujf-grenoble.fr/codes"
+            elementFormDefault="qualified">
+  <xsd:import schemaLocation="/ext/reynauta/Documents/LangageWeb/TP04/web/WEB-INF/xsd/fiches.xsd" namespace="http://polytech.ujf-grenoble.fr/fiches"/>
+  <xsd:import schemaLocation="/ext/reynauta/Documents/LangageWeb/TP04/web/WEB-INF/xsd/codes.xsd" namespace="http://polytech.ujf-grenoble.fr/codes"/>
+  <xsd:element name="centre" type="Centre"/>
+  <xsd:complexType name="Centre">
+    <xsd:sequence>
+      <xsd:element name="medecins" type="ce:Medecins"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="Medecins">
+    <xsd:sequence>
+      <xsd:element name="medecin" type="ce:Medecin"/>      
+      <xsd:element name="codes" type="cod:Codes"/>
+      <xsd:element name="fiches" type="fic:Fiches"/>
+    </xsd:sequence>
+  </xsd:complexType>  
+   <xsd:complexType name="Medecin">
+    <xsd:sequence>
+      <xsd:element name="id" type="ce:IdMed"/>
+      <xsd:element name="nom" type="xsd:string"/>
+      <xsd:element name="prenom" type="xsd:string"/>
+      <xsd:element name="specialite" type="ce:Specialite"/>
+    </xsd:sequence>
+  </xsd:complexType>  
+  <xsd:simpleType name="IdMed">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="[A-Z][0-9]{2}-[0-9]{4}"/>
+        </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="Specialite">
+        <xsd:restriction  base="xsd:string">
+                <xsd:enumeration value="ORL"/>
+                <xsd:enumeration value="Cardiologue"/>
+                <xsd:enumeration value="Gynecologue"/>
+        </xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>

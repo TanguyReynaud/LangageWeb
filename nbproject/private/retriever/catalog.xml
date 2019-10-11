@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://polytech.ujf-grenoble.fr/idty" uri="www.polytech-grenoble.fr"/>
+    <system systemId="http://polytech.ujf-grenoble.fr/author" uri="www.polytech-grenoble.fr"/>
+    <system systemId="http://polytech.ujf-grenoble.fr/idt" uri="www.polytech-grenoble.fr"/>
+    <system systemId="http://polytech.ujf-grenoble.fr/auth" uri="www.polytech-grenoble.fr"/>
+    <system systemId="http://polytech.ujf-grenoble.fr/adherent" uri="www.polytech-grenoble.fr"/>
+    <system systemId="http://polytech.ujf-grenoble.fr/centre" uri="www.polytech-grenoble.fr"/>
+    <system systemId="http://polytech.ujf-grenoble.fr/fiches" uri="www.polytech-grenoble.fr"/>
+    <system systemId="http://polytech.ujf-grenoble.fr/code" uri="www.polytech-grenoble.fr"/>
+    <system systemId="http://polytech.ujf-grenoble.fr/codes" uri="www.polytech-grenoble.fr"/>
+    <system systemId="http://polytech.ujf-grenoble.fr/c" uri="www.polytech-grenoble.fr"/>
+    <system systemId="http://polytech.ujf-grenoble.fr/ce" uri="www.polytech-grenoble.fr"/>
+    <system systemId="http://polytech.ujf-grenoble.fr/f" uri="www.polytech-grenoble.fr"/>
+    <system systemId="http://polytech.ujf-grenoble.fr/fi" uri="www.polytech-grenoble.fr"/>
+</catalog>

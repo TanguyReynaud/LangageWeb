@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://polytech.ujf-grenoble.fr/codes"
+            xmlns="http://polytech.ujf-grenoble.fr/codes"
+            xmlns:cod="http://polytech.ujf-grenoble.fr/codes"
+            elementFormDefault="qualified">
+  <xsd:import schemaLocation="/ext/reynauta/Documents/LangageWeb/TP04/web/WEB-INF/xsd/fiches.xsd" namespace="http://polytech.ujf-grenoble.fr/fiches"/>
+  <xsd:import schemaLocation="/ext/reynauta/Documents/LangageWeb/TP04/web/WEB-INF/xsd/codes.xsd" namespace="http://polytech.ujf-grenoble.fr/codes"/>
+    <xsd:element name="codes" type="Codes"/>
+    <xsd:complexType name="Codes">
+        <xsd:sequence>
+          <xsd:element name="codecout" type="cod:CodeCout"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="CodeCout">
+        <xsd:sequence>
+          <xsd:element name="nom" type="cod:NomCode"/>
+          <xsd:element name="libelle" type="xsd:string"/>
+          <xsd:element name="cout" type="xsd:decimal"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:simpleType name="NomCode">
+        <xsd:restriction  base="xsd:string">
+                <xsd:enumeration value="CS"/>
+                <xsd:enumeration value="CSC"/>
+                <xsd:enumeration value="FP"/>
+                <xsd:enumeration value="KC"/>
+                <xsd:enumeration value="K"/>
+                <xsd:enumeration value="KE"/>
+                <xsd:enumeration value="KFA"/>
+                <xsd:enumeration value="KFB"/>
+                <xsd:enumeration value="ORT"/>
+                <xsd:enumeration value="PRO"/>
+        </xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>
